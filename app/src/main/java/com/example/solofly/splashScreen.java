@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 public class splashScreen extends AppCompatActivity {
 
     @Override
@@ -20,6 +22,6 @@ public class splashScreen extends AppCompatActivity {
             public void run() {
                 startActivity(intent);
             }
-        },5000);
+        },3000);
     }
 }

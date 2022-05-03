@@ -8,12 +8,10 @@
     android:gravity="center"
     tools:context=".splashScreen">
 
-    <ImageView
+    <com.airbnb.lottie.LottieAnimationView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_logo_full"
-        android:layout_gravity="center"
-        android:id="@+id/sp1"
-        />
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/logo_animation"
+        app:lottie_autoPlay="true"/>
 
 </LinearLayout>
