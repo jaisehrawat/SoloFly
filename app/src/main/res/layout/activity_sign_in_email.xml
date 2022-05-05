@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkWhite"
+    tools:context=".SignInEmail">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your Email Address"
+        android:textColor="@color/black"
+        android:layout_marginTop="80sp"
+        android:paddingHorizontal="50sp"
+        android:textSize="35sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We will send you a confirmation code"
+        android:textColor="@color/black"
+        android:layout_marginTop="25sp"
+        android:paddingStart="50sp"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:hint="example@gmail.com"
+        android:background="@null"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/lightGreen"
+        android:textColorHint="@color/darkGrey"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="or"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/changeToNumber"
+        android:layout_marginTop="25sp"
+        android:layout_gravity="center"
+        android:textColor="@color/lightGreen"
+        android:textSize="15sp"
+        android:text="Number"
+        android:clickable="true"/>
+
+    <Button
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50sp"
+        android:background="@drawable/custom_siginin_button"
+        android:padding="8sp"
+        android:text="Next"
+        android:textSize="25sp"
+        />
+
+
+</LinearLayout>

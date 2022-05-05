@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_black_italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_bolditalic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_extrabold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_extrabolditalic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_extralight"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_extralightitalic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_light"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_lightitalic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_mediumitalic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_semibold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_semibolditalic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_thin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoloFly"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_thin_italic"/>
+</LinearLayout>
