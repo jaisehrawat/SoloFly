@@ -4,74 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/darkWhite"
+    android:orientation="vertical"
     tools:context=".SignIn">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginHorizontal="50sp"
         android:text="Enter your mobile number"
         android:textColor="@color/black"
-        android:layout_marginTop="80sp"
-        android:paddingHorizontal="50sp"
-        android:textSize="33sp"
-        android:textStyle="normal"/>
+        android:textSize="35sp"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="We will send you a confirmation code"
-        android:textColor="@color/black"
         android:layout_marginTop="25sp"
         android:paddingStart="50sp"
-        android:textSize="15sp"
-        />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:hint="00000 00000"
-        android:digits="0123456789+"
-        android:background="@null"
-        android:inputType="phone"
-        android:textColor="@color/lightGreen"
-        android:textColorHint="@color/darkGrey"
-        android:textSize="30sp"
-        android:layout_gravity="center"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25sp"
-        android:layout_gravity="center"
+        android:text="We will send you a confirmation code"
         android:textColor="@color/black"
-        android:textSize="15sp"
-        android:text="or"/>
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccpDialog_textColor="@color/lightGreen"
+            app:ccp_showNameCode="false"
+            app:ccp_textSize="20sp"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:digits="0123456789+"
+            android:hint="0000000000"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textColor="@color/lightGreen"
+            android:textColorHint="@color/darkGrey"
+            android:textSize="30sp" />
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/changeToEmail"
-        android:layout_marginTop="25sp"
         android:layout_gravity="center"
+        android:layout_marginTop="25sp"
+        android:text="or"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/changeToEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25sp"
+        android:clickable="true"
+        android:text="Email"
         android:textColor="@color/lightGreen"
         android:textSize="15sp"
-        android:text="Email"
-        android:clickable="true"/>
+        android:fontFamily="@font/montserrat_bold" />
 
     <Button
-        android:layout_width="282dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="75dp"
         android:layout_marginTop="50sp"
         android:background="@drawable/custom_siginin_button"
-        android:padding="8sp"
-        android:text="Next"
-        android:textSize="25sp"
-        />
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textSize="25sp" />
 
 
 </LinearLayout>

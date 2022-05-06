@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkWhite"
+    android:orientation="vertical"
+    tools:context=".OTP">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="264dp"
+        android:layout_height="259dp"
+        android:layout_gravity="center"
+        app:lottie_rawRes="@raw/otp_lock_animation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Verification Code"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="8sp"
+        android:gravity="center"
+        android:text="We have to sent the verification code to Your @String"
+        android:textColor="@color/lightGreen"
+        android:textSize="20sp"
+        android:textStyle="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="25sp">
+
+        <EditText
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginHorizontal="3dp"
+            android:background="@drawable/otp_box"
+            android:gravity="center"
+            android:hint="0"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/lightGreen"
+            android:textColorHint="@color/darkGrey"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginHorizontal="3dp"
+            android:background="@drawable/otp_box"
+            android:gravity="center"
+            android:hint="0"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/lightGreen"
+            android:textColorHint="@color/darkGrey"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginHorizontal="3dp"
+            android:background="@drawable/otp_box"
+            android:gravity="center"
+            android:hint="0"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/lightGreen"
+            android:textColorHint="@color/darkGrey"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginHorizontal="3dp"
+            android:background="@drawable/otp_box"
+            android:gravity="center"
+            android:hint="0"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/lightGreen"
+            android:textColorHint="@color/darkGrey"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="75dp"
+        android:layout_marginTop="50sp"
+        android:background="@drawable/send_again_code_btn"
+        android:textColor="@color/darkGreen"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Send Again"
+        android:textAllCaps="false"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="75dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/custom_siginin_button"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="25sp" />
+
+</LinearLayout>

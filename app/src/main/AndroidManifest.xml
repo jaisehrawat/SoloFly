@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SoloFly">
         <activity
+            android:name=".OTP"
+            android:exported="false" />
+        <activity
             android:name=".SignInEmail"
             android:exported="false" />
         <activity
