@@ -18,8 +18,8 @@
         app:cnb_backgroundColor="#fff"
         />
     <item
-        android:id="@+id/tools"
-        android:title="Tools"
+        android:id="@+id/dashboard"
+        android:title="Dashboard"
         android:icon="@drawable/ic_favourite"
         app:cnb_textColor="@color/darkGreen"
         app:cnb_iconColor="@color/darkGreen"

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "660395300981",
+    "project_id": "solofly-4d009",
+    "storage_bucket": "solofly-4d009.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660395300981:android:449b706be59c156093c03c",
+        "android_client_info": {
+          "package_name": "com.example.solofly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660395300981-gtg3e42vui07dm1hr17ig2qibh2umt5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy7yFghuetfB4gFIRX-6m6jiPjFgugR1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660395300981-gtg3e42vui07dm1hr17ig2qibh2umt5l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

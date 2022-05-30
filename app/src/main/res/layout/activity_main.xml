@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.Default"
     android:background="@color/darkWhite"
     tools:context=".MainActivity">
 
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="?attr/actionBarSize"
         android:layout_alignParentBottom="true"
         android:background="@drawable/round_bottom_back"
         android:elevation="18dp"
@@ -19,5 +18,10 @@
         app:cnb_menuResource="@menu/bottom_menu"
         app:cnb_radius="50sp"
         app:cnb_unselectedColor="#000" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"/>
 
 </RelativeLayout>

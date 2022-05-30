@@ -19,15 +19,17 @@
         android:textSize="36sp" />
 
     <TextView
+        android:id="@+id/emailOtpMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25sp"
-        android:paddingStart="50sp"
         android:text="We will send you a confirmation code"
+        android:layout_marginTop="25sp"
+        android:layout_marginHorizontal="50dp"
         android:textColor="@color/black"
         android:textSize="15sp" />
 
     <EditText
+        android:id="@+id/enterEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -63,17 +65,30 @@
         android:textColor="@color/lightGreen"
         android:textSize="15sp" />
 
-    <Button
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginHorizontal="75dp"
-        android:layout_marginTop="50sp"
-        android:background="@drawable/custom_siginin_button"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="Sign In"
-        android:textAllCaps="false"
-        android:textSize="25sp" />
+        android:layout_marginTop="50sp">
 
+        <Button
+            android:id="@+id/signInByEmailBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="75dp"
+            android:background="@drawable/custom_siginin_button"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textSize="25sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
 
 </LinearLayout>
