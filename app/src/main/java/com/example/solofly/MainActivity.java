@@ -2,6 +2,7 @@ package com.example.solofly;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -19,6 +20,7 @@ import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 public class MainActivity extends AppCompatActivity implements ChipNavigationBar.OnItemSelectedListener {
 
     ChipNavigationBar bnView;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,34 +28,10 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
         setContentView(R.layout.activity_main);
 
         bnView = findViewById(R.id.bottomNav);
+        toolbar = findViewById(R.id.toolbar);
 
-//        bnView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//                int id = item.getItemId();
-//
-//                if(id == R.id.dashboard)
-//                {
-//                    FragmentManager fm = getSupportFragmentManager();
-//                    FragmentTransaction ft = fm.beginTransaction();
-//
-//                }
-//                else if(id == R.id.home)
-//                {
-//
-//                }
-//                else if (id == R.id.upcomings)
-//                {
-//
-//                }
-//                else
-//                {
-//
-//                }
-//
-//                return false;
-//            }
-//        });
+        setSupportActionBar(toolbar);
+
 
         loadFragment(new dashboard());
         bnView.setOnItemSelectedListener(this);

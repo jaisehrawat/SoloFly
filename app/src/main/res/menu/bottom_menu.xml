@@ -4,7 +4,7 @@
     <item
         android:id="@+id/upcomings"
         android:title="UpComings"
-        android:icon="@drawable/ic_favourite"
+        android:icon="@drawable/ic_sort_down"
         app:cnb_textColor="@color/darkGreen"
         app:cnb_iconColor="@color/darkGreen"
         app:cnb_backgroundColor="#fff"
@@ -12,7 +12,7 @@
     <item
         android:id="@+id/home"
         android:title="Home"
-        android:icon="@drawable/ic_favourite"
+        android:icon="@drawable/ic_home"
         app:cnb_textColor="@color/darkGreen"
         app:cnb_iconColor="@color/darkGreen"
         app:cnb_backgroundColor="#fff"
@@ -20,7 +20,7 @@
     <item
         android:id="@+id/dashboard"
         android:title="Dashboard"
-        android:icon="@drawable/ic_favourite"
+        android:icon="@drawable/ic_grid"
         app:cnb_textColor="@color/darkGreen"
         app:cnb_iconColor="@color/darkGreen"
         app:cnb_backgroundColor="#fff"
