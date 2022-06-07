@@ -10,6 +10,8 @@
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
 
+    <color  name="mtrl_textinput_default_box_stroke_color">@color/darkGreen</color>
+
 <!--    Default   -->
     ##############################
 

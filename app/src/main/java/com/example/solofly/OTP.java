@@ -21,6 +21,11 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.concurrent.TimeUnit;
 
@@ -106,9 +111,29 @@ public class OTP extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            startActivity(new Intent(OTP.this, MainActivity.class));
-                            Toast.makeText(OTP.this, "Verify Successfully", Toast.LENGTH_SHORT).show();
-                            finish();
+                            DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("User");
+                            databaseReference.orderByChild("phone").equalTo(phoneNumber).addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    if (snapshot.getValue() != null) {
+                                        Intent intent = new Intent(OTP.this, MainActivity.class);
+                                        startActivity(intent);
+                                        Toast.makeText(OTP.this, "Verify Successfully", Toast.LENGTH_SHORT).show();
+                                        finish();
+                                    } else {
+                                        Intent intent = new Intent(OTP.this, Form.class);
+                                        intent.putExtra("phoneNumber", phoneNumber);
+                                        startActivity(intent);
+                                        Toast.makeText(OTP.this, "Verify Successfully", Toast.LENGTH_SHORT).show();
+                                        finish();
+                                    }
+                                }
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+
+                                }
+                            });
+
                         } else {
                             Toast.makeText(OTP.this, "Invalid OTP", Toast.LENGTH_SHORT).show();
                         }
