@@ -7,7 +7,63 @@
     android:background="@color/darkWhite"
     tools:context=".MainActivity">
 
-    <include layout="@layout/activity_appbar" />
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/dashboardAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/_1ssp"
+        android:background="@color/darkWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:paddingVertical="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_15ssp"
+                        android:src="@drawable/ic_user"
+                        app:civ_border_color="@color/darkGreen"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_marginStart="@dimen/_10ssp"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_25ssp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:id="@+id/bellIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_bell" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/activity_bottom_navigation_bar" />
 
@@ -15,7 +71,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/appbar"
+        android:layout_below="@+id/dashboardAppbar"
         android:layout_marginBottom="?attr/actionBarSize">
 
         <FrameLayout

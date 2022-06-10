@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.SoloFly" parent="Theme.AppCompat.NoActionBar">
-        <!-- Primary brand color. -->
+    <style name="Theme.SoloFly" parent="Theme.Material3.DayNight.NoActionBar">
+    <!-- Primary brand color. -->
         <item name="colorPrimary">@color/darkWhite</item>
         <item name="colorPrimaryVariant">@color/darkWhite</item>
         <item name="colorOnPrimary">@color/black</item>

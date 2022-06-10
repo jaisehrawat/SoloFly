@@ -71,13 +71,12 @@ public class OTP extends AppCompatActivity {
                     PhoneAuthCredential credential = PhoneAuthProvider.getCredential(otpid, otp);
                     signInWithPhoneAuthCredential(credential);
                 }
-
             }
         });
 
     }
 
-    private void initiateotp() {
+    private void initiateotp()  {
         PhoneAuthOptions options =
                 PhoneAuthOptions.newBuilder(mAuth)
                         .setPhoneNumber(phoneNumber)       // Phone number to verify
@@ -128,6 +127,7 @@ public class OTP extends AppCompatActivity {
                                         finish();
                                     }
                                 }
+
                                 @Override
                                 public void onCancelled(@NonNull DatabaseError error) {
 

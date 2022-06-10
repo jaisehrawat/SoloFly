@@ -47,7 +47,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/emailEdittextLayout"
+
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -121,70 +121,4 @@
 
     </LinearLayout>
 
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="horizontal"-->
-<!--        android:weightSum="2">-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            android:orientation="vertical">-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/nametxt"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Name"-->
-<!--                android:textColor="@color/green"-->
-<!--                android:textSize="@dimen/_15ssp" />-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/emailtxt"-->
-<!--                android:layout_marginVertical="@dimen/_5ssp"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Name"-->
-<!--                android:textColor="@color/green"-->
-<!--                android:textSize="@dimen/_15ssp" />-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/phonetxt"-->
-<!--                android:layout_marginVertical="@dimen/_5ssp"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Name"-->
-<!--                android:textColor="@color/green"-->
-<!--                android:textSize="@dimen/_15ssp" />-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/dobtxt"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Name"-->
-<!--                android:textColor="@color/green"-->
-<!--                android:textSize="@dimen/_15ssp" />-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/url"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Name"-->
-<!--                android:textColor="@color/green"-->
-<!--                android:textSize="@dimen/_15ssp" />-->
-<!--        </LinearLayout>-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/profiletxt"-->
-<!--            android:layout_width="@dimen/_75ssp"-->
-<!--            android:layout_height="@dimen/_75ssp" />-->
-<!--    </LinearLayout>-->
-<!--    <Button-->
-<!--        android:id="@+id/check"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:backgroundTint="@color/purple_200"-->
-<!--        android:text="Check"/>-->
 </LinearLayout>
