@@ -3,6 +3,7 @@ package com.example.solofly;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -20,9 +21,19 @@ public class splashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(intent);
-                finish();
+                SharedPreferences preferences = getSharedPreferences("logInData", MODE_PRIVATE);
+                Boolean isLoggedInCheck = preferences.getBoolean("isLoggedIn", false);
+
+                if (isLoggedInCheck) {
+                    Intent intent = new Intent(splashScreen.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Intent intent = new Intent(splashScreen.this, SignIn.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
-        },3000);
+        }, 3000);
     }
 }

@@ -31,6 +31,7 @@
                     android:layout_weight="1">
 
                     <ImageView
+                        android:id="@+id/back_button"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:contentDescription="Back Arrow"
@@ -39,6 +40,7 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/activity_name"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical|center_horizontal"
@@ -55,7 +57,7 @@
                     android:gravity="right">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/profile_image"
+                        android:id="@+id/profile_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginRight="@dimen/_15ssp"

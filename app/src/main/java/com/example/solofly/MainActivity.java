@@ -8,17 +8,25 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
+import com.squareup.picasso.Picasso;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -26,8 +34,9 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
 
     ChipNavigationBar bnView;
     Toolbar toolbar;
-    CircleImageView profileIcon;
-    ImageView bellIcon;
+    ImageView bellIcon, profile_icon_dashboard;
+    TextView name_dashboard;
+    String name, phone, profileUrl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,10 +45,9 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
 
         bnView = findViewById(R.id.bottomNav);
         toolbar = findViewById(R.id.toolbar);
-        profileIcon = findViewById(R.id.profile_icon);
+        profile_icon_dashboard = findViewById(R.id.profile_icon_dashboard);
         bellIcon = findViewById(R.id.bellIcon);
-
-        setSupportActionBar(toolbar);
+        name_dashboard = findViewById(R.id.name_dashboard);
 
         loadFragment(new dashboard());
         bnView.setOnItemSelectedListener(this);
@@ -52,14 +60,13 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
             }
         });
 
-        profileIcon.setOnClickListener(new View.OnClickListener() {
+        profile_icon_dashboard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Profile.class);
                 startActivity(intent);
             }
         });
-
 
     }
 
@@ -99,5 +106,35 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
         }
 
         loadFragment(fragment);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        SharedPreferences preferences = getSharedPreferences("logInData", MODE_PRIVATE);
+        phone = preferences.getString("phone","");
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("User").child(phone);
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists()){
+                    Data d = snapshot.getValue(Data.class);
+                    name = d.getName();
+                    profileUrl = d.getProfileUrl();
+                    System.out.println(name);
+                    System.out.println(profileUrl);
+                    name_dashboard.setText(name);
+                    Picasso.get().load(profileUrl).into(profile_icon_dashboard);
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
     }
 }

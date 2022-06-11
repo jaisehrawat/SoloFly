@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -76,7 +77,7 @@ public class OTP extends AppCompatActivity {
 
     }
 
-    private void initiateotp()  {
+    private void initiateotp() {
         PhoneAuthOptions options =
                 PhoneAuthOptions.newBuilder(mAuth)
                         .setPhoneNumber(phoneNumber)       // Phone number to verify
@@ -117,6 +118,13 @@ public class OTP extends AppCompatActivity {
                                     if (snapshot.getValue() != null) {
                                         Intent intent = new Intent(OTP.this, MainActivity.class);
                                         startActivity(intent);
+
+                                        SharedPreferences preferences = getSharedPreferences("logInData", MODE_PRIVATE);
+                                        SharedPreferences.Editor myEdit = preferences.edit();
+                                        myEdit.putString("phone", String.valueOf(phoneNumber));
+                                        myEdit.putBoolean("isLoggedIn", true);
+                                        myEdit.apply();
+
                                         Toast.makeText(OTP.this, "Verify Successfully", Toast.LENGTH_SHORT).show();
                                         finish();
                                     } else {

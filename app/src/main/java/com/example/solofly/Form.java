@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -123,6 +124,13 @@ public class Form extends AppCompatActivity {
                     uploadProfile(imageUri);
                     Intent intent = new Intent(Form.this, MainActivity.class);
                     startActivity(intent);
+
+                    SharedPreferences preferences = getSharedPreferences("logInData", MODE_PRIVATE);
+                    SharedPreferences.Editor myEdit = preferences.edit();
+                    myEdit.putString("phone", String.valueOf(phone));
+                    myEdit.putBoolean("isLoggedIn", true);
+                    myEdit.apply();
+
                     finish();
                 }
             }
