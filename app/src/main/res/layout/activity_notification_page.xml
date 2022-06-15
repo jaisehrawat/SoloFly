@@ -6,119 +6,15 @@
     android:layout_height="match_parent"
     android:background="@color/darkWhite"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".NotificationPage">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="@dimen/_20ssp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_15ssp"
-            android:layout_marginBottom="@dimen/_35ssp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="Sign up"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_25ssp"
-            android:textStyle="bold" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/_5ssp"
-            android:hint="Name"
-            android:textColorHint="@color/darkGreen"
-            app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
-            app:boxStrokeWidth="1dp"
-            app:boxStrokeWidthFocused="2dp"
-            app:hintTextColor="@color/darkGreen">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/nameEdittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:textColor="@color/lightGreen" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/_5ssp"
-            android:hint="Email address"
-            android:textColorHint="@color/darkGreen"
-            app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
-            app:boxStrokeWidth="1dp"
-            app:boxStrokeWidthFocused="2dp"
-            app:hintTextColor="@color/darkGreen">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/emailEdittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:textColor="@color/lightGreen" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <Button
-            android:id="@+id/dateOfBirth"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/_5ssp"
-            android:text="01/01/1901"
-            android:textColor="@color/lightGreen"
-            app:icon="@drawable/ic_calendar"
-            app:iconSize="@dimen/_24ssp"
-            app:iconTint="@color/lightGreen"
-            app:strokeColor="@color/darkGreen" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/uploadProfileBtn"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="@dimen/_5ssp"
-                android:text="Upload Profile"
-                android:textColor="@color/lightGreen"
-                app:icon="@drawable/ic_person"
-                app:iconSize="@dimen/_24ssp"
-                app:iconTint="@color/lightGreen"
-                app:strokeColor="@color/darkGreen" />
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profilePhoto"
-                android:layout_width="@dimen/_75ssp"
-                android:layout_height="@dimen/_75ssp"
-                android:layout_marginLeft="@dimen/_10ssp"
-                android:visibility="gone" />
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_25ssp"
-            android:backgroundTint="@color/darkGreen"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="Save"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            app:cornerRadius="@dimen/_50ssp" />
-
-
-    </LinearLayout>
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Notifications"
+     android:textSize="@dimen/_40ssp"
+     />
 
 </LinearLayout>

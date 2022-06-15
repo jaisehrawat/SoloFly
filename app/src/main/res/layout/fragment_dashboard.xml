@@ -10,476 +10,536 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <!--    <GridLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        android:layout_gravity="center"-->
-    <!--        android:layout_margin="25dp"-->
-    <!--        android:columnCount="2"-->
-    <!--        android:rowCount="3">-->
-
-
-    <!--        <androidx.cardview.widget.CardView-->
-    <!--            android:id="@+id/a1"-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_row="0"-->
-    <!--            android:layout_rowWeight="1"-->
-    <!--            android:layout_column="0"-->
-    <!--            android:layout_columnWeight="1"-->
-    <!--            android:layout_gravity="fill"-->
-    <!--            android:layout_margin="8dp"-->
-    <!--            android:clickable="true"-->
-    <!--            app:cardBackgroundColor="@color/lightGreen"-->
-    <!--            app:cardCornerRadius="24dp"-->
-    <!--            app:cardElevation="8dp">-->
-
-    <!--            <LinearLayout-->
-    <!--                android:layout_width="wrap_content"-->
-    <!--                android:layout_height="wrap_content"-->
-    <!--                android:layout_gravity="center_vertical|center_horizontal"-->
-    <!--                android:gravity="center"-->
-    <!--                android:orientation="vertical">-->
-
-    <!--                <ImageView-->
-    <!--                    android:layout_width="wrap_content"-->
-    <!--                    android:layout_height="wrap_content"-->
-    <!--                    android:src="@drawable/ic_favourite" />-->
-
-    <!--                <TextView-->
-    <!--                    android:layout_width="match_parent"-->
-    <!--                    android:layout_height="wrap_content"-->
-    <!--                    android:text="Diary"-->
-    <!--                    android:textAlignment="center"-->
-    <!--                    android:textColor="@color/green"-->
-    <!--                    android:textStyle="bold" />-->
-    <!--            </LinearLayout>-->
-    <!--        </androidx.cardview.widget.CardView>-->
-
-    <!--        <androidx.cardview.widget.CardView-->
-    <!--            android:id="@+id/a2"-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_row="0"-->
-    <!--            android:layout_rowWeight="1"-->
-    <!--            android:layout_column="1"-->
-    <!--            android:layout_columnWeight="1"-->
-    <!--            android:layout_gravity="fill"-->
-    <!--            android:layout_margin="8dp"-->
-    <!--            android:clickable="true"-->
-    <!--            app:cardBackgroundColor="@color/lightGreen"-->
-    <!--            app:cardCornerRadius="24dp"-->
-    <!--            app:cardElevation="8dp">-->
-
-    <!--            <LinearLayout-->
-    <!--                android:layout_width="wrap_content"-->
-    <!--                android:layout_height="wrap_content"-->
-    <!--                android:layout_gravity="center_vertical|center_horizontal"-->
-    <!--                android:gravity="center"-->
-    <!--                android:orientation="vertical">-->
-
-    <!--                <ImageView-->
-    <!--                    android:layout_width="wrap_content"-->
-    <!--                    android:layout_height="wrap_content"-->
-    <!--                    android:src="@drawable/ic_favourite" />-->
-
-    <!--                <TextView-->
-    <!--                    android:layout_width="match_parent"-->
-    <!--                    android:layout_height="wrap_content"-->
-    <!--                    android:text="Notes"-->
-    <!--                    android:textAlignment="center"-->
-    <!--                    android:textColor="@color/green"-->
-    <!--                    android:textStyle="bold" />-->
-    <!--            </LinearLayout>-->
-    <!--        </androidx.cardview.widget.CardView>-->
-
-    <!--        <androidx.cardview.widget.CardView-->
-    <!--            android:id="@+id/a3"-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_row="1"-->
-    <!--            android:layout_rowWeight="1"-->
-    <!--            android:layout_column="0"-->
-    <!--            android:layout_columnWeight="1"-->
-    <!--            android:layout_gravity="fill"-->
-    <!--            android:layout_margin="8dp"-->
-    <!--            android:clickable="true"-->
-    <!--            app:cardBackgroundColor="@color/lightGreen"-->
-    <!--            app:cardCornerRadius="24dp"-->
-    <!--            app:cardElevation="8dp">-->
-
-    <!--            <LinearLayout-->
-    <!--                android:layout_width="wrap_content"-->
-    <!--                android:layout_height="wrap_content"-->
-    <!--                android:layout_gravity="center_vertical|center_horizontal"-->
-    <!--                android:gravity="center"-->
-    <!--                android:orientation="vertical">-->
-
-    <!--                <ImageView-->
-    <!--                    android:layout_width="wrap_content"-->
-    <!--                    android:layout_height="wrap_content"-->
-    <!--                    android:src="@drawable/ic_favourite" />-->
-
-    <!--                <TextView-->
-    <!--                    android:layout_width="match_parent"-->
-    <!--                    android:layout_height="wrap_content"-->
-    <!--                    android:text="Reminders"-->
-    <!--                    android:textAlignment="center"-->
-    <!--                    android:textColor="@color/green"-->
-    <!--                    android:textStyle="bold" />-->
-    <!--            </LinearLayout>-->
-    <!--        </androidx.cardview.widget.CardView>-->
-
-    <!--        <androidx.cardview.widget.CardView-->
-    <!--            android:id="@+id/a4"-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_row="1"-->
-    <!--            android:layout_rowWeight="1"-->
-    <!--            android:layout_column="1"-->
-    <!--            android:layout_columnWeight="1"-->
-    <!--            android:layout_gravity="fill"-->
-    <!--            android:layout_margin="8dp"-->
-    <!--            android:clickable="true"-->
-    <!--            app:cardBackgroundColor="@color/lightGreen"-->
-    <!--            app:cardCornerRadius="24dp"-->
-    <!--            app:cardElevation="8dp">-->
-
-    <!--            <LinearLayout-->
-    <!--                android:layout_width="wrap_content"-->
-    <!--                android:layout_height="wrap_content"-->
-    <!--                android:layout_gravity="center_vertical|center_horizontal"-->
-    <!--                android:gravity="center"-->
-    <!--                android:orientation="vertical">-->
-
-    <!--                <ImageView-->
-    <!--                    android:layout_width="wrap_content"-->
-    <!--                    android:layout_height="wrap_content"-->
-    <!--                    android:src="@drawable/ic_favourite" />-->
-
-    <!--                <TextView-->
-    <!--                    android:layout_width="match_parent"-->
-    <!--                    android:layout_height="wrap_content"-->
-    <!--                    android:text="ToDo"-->
-    <!--                    android:textAlignment="center"-->
-    <!--                    android:textColor="@color/green"-->
-    <!--                    android:textStyle="bold" />-->
-    <!--            </LinearLayout>-->
-    <!--        </androidx.cardview.widget.CardView>-->
-
-    <!--        <androidx.cardview.widget.CardView-->
-    <!--            android:id="@+id/storage"-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_row="2"-->
-    <!--            android:layout_rowWeight="1"-->
-    <!--            android:layout_column="0"-->
-    <!--            android:layout_columnWeight="1"-->
-    <!--            android:layout_gravity="fill"-->
-    <!--            android:layout_margin="8dp"-->
-    <!--            android:clickable="true"-->
-    <!--            app:cardBackgroundColor="@color/lightGreen"-->
-    <!--            app:cardCornerRadius="24dp"-->
-    <!--            app:cardElevation="8dp">-->
-
-    <!--            <LinearLayout-->
-    <!--                android:layout_width="wrap_content"-->
-    <!--                android:layout_height="wrap_content"-->
-    <!--                android:layout_gravity="center_vertical|center_horizontal"-->
-    <!--                android:gravity="center"-->
-    <!--                android:orientation="vertical">-->
-
-    <!--                <ImageView-->
-    <!--                    android:layout_width="wrap_content"-->
-    <!--                    android:layout_height="wrap_content"-->
-    <!--                    android:src="@drawable/ic_storage" />-->
-
-    <!--                <TextView-->
-    <!--                    android:layout_width="wrap_content"-->
-    <!--                    android:layout_height="wrap_content"-->
-    <!--                    android:text="Storage"-->
-    <!--                    android:textAlignment="center"-->
-    <!--                    android:textColor="@color/green"-->
-    <!--                    android:textStyle="bold" />-->
-    <!--            </LinearLayout>-->
-    <!--        </androidx.cardview.widget.CardView>-->
-
-    <!--        <androidx.cardview.widget.CardView-->
-    <!--            android:id="@+id/settings"-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_row="2"-->
-    <!--            android:layout_rowWeight="1"-->
-    <!--            android:layout_column="1"-->
-    <!--            android:layout_columnWeight="1"-->
-    <!--            android:layout_gravity="fill"-->
-    <!--            android:layout_margin="8dp"-->
-    <!--            android:clickable="true"-->
-    <!--            app:cardBackgroundColor="@color/lightGreen"-->
-    <!--            app:cardCornerRadius="24dp"-->
-    <!--            app:cardElevation="8dp">-->
-
-    <!--            <LinearLayout-->
-    <!--                android:layout_width="wrap_content"-->
-    <!--                android:layout_height="wrap_content"-->
-    <!--                android:layout_gravity="center_vertical|center_horizontal"-->
-    <!--                android:gravity="center"-->
-    <!--                android:orientation="vertical">-->
-
-    <!--                <ImageView-->
-    <!--                    android:layout_width="wrap_content"-->
-    <!--                    android:layout_height="wrap_content"-->
-    <!--                    android:src="@drawable/ic_storage" />-->
-
-    <!--                <TextView-->
-    <!--                    android:layout_width="match_parent"-->
-    <!--                    android:layout_height="wrap_content"-->
-    <!--                    android:text="Settings"-->
-    <!--                    android:textAlignment="center"-->
-    <!--                    android:textColor="@color/green"-->
-    <!--                    android:textStyle="bold" />-->
-    <!--            </LinearLayout>-->
-    <!--        </androidx.cardview.widget.CardView>-->
-
-    <!--    </GridLayout>-->
-
-
-    <GridLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_margin="25dp"
-        android:columnCount="2"
-        android:rowCount="3">
+        android:layout_height="wrap_content">
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_rowWeight="1"
-            android:layout_column="0"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            android:backgroundTint="@color/lightGreen"
-            app:cardCornerRadius="24dp"
-            app:cardElevation="8dp"
-            app:strokeColor="@color/darkGreen">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:weightSum="3">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-                <!-- Media -->
-                <ImageView
+                <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
-                    android:layout_height="194dp"
-                    android:contentDescription="content_description_media"
-                    app:srcCompat="@drawable/ic_favourite" />
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/lightGreen"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="8dp"
+                    app:strokeColor="@color/darkGreen">
 
-                <!-- Title, secondary and supporting text -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="title"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textSize="25dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="194dp"
+                            app:srcCompat="@drawable/diary" />
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Diary"
+                            android:textAlignment="center"
+                            android:textColor="#5886F8"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/lightGreen"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="8dp"
+                    app:strokeColor="@color/darkGreen">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="194dp"
+                            android:contentDescription="content_description_media"
+                            app:srcCompat="@drawable/notes" />
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Notes"
+                            android:textAlignment="center"
+                            android:textColor="#5886F8"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_rowWeight="1"
-            android:layout_column="1"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            android:backgroundTint="@color/lightGreen"
-            app:cardCornerRadius="24dp"
-            app:cardElevation="8dp"
-            app:strokeColor="@color/darkGreen">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-                <!-- Media -->
-                <ImageView
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/toDo"
                     android:layout_width="match_parent"
-                    android:layout_height="194dp"
-                    android:contentDescription="content_description_media"
-                    app:srcCompat="@drawable/ic_favourite" />
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/lightGreen"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="8dp"
+                    app:strokeColor="@color/darkGreen">
 
-                <!-- Title, secondary and supporting text -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="title"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textSize="25dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="194dp"
+                            app:srcCompat="@drawable/todo" />
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:text="ToDo"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textColor="#5886F8"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/lightGreen"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="8dp"
+                    app:strokeColor="@color/darkGreen">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="194dp"
+                            android:contentDescription="content_description_media"
+                            app:srcCompat="@drawable/schedule" />
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:text="Schedule"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textColor="#5886F8"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
             </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_rowWeight="1"
-            android:layout_column="0"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            android:backgroundTint="@color/lightGreen"
-            app:cardCornerRadius="24dp"
-            app:cardElevation="8dp"
-            app:strokeColor="@color/darkGreen">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-                <!-- Media -->
-                <ImageView
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/storage"
                     android:layout_width="match_parent"
-                    android:layout_height="194dp"
-                    android:contentDescription="content_description_media"
-                    app:srcCompat="@drawable/ic_favourite" />
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/lightGreen"
+                    app:cardCornerRadius="24dp"
+                    app:strokeColor="@color/darkGreen">
 
-                <!-- Title, secondary and supporting text -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="title"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textSize="25dp" />
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_rowWeight="1"
-            android:layout_column="1"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            android:backgroundTint="@color/lightGreen"
-            app:cardCornerRadius="24dp"
-            app:cardElevation="8dp"
-            app:strokeColor="@color/darkGreen">
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="194dp"
+                            android:contentDescription="content_description_media"
+                            app:srcCompat="@drawable/storage" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:text="Storage"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textColor="#5886F8"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
 
-                <!-- Media -->
-                <ImageView
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/settings"
                     android:layout_width="match_parent"
-                    android:layout_height="194dp"
-                    android:contentDescription="content_description_media"
-                    app:srcCompat="@drawable/ic_favourite" />
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/lightGreen"
+                    app:cardCornerRadius="24dp"
+                    app:strokeColor="@color/darkGreen">
 
-                <!-- Title, secondary and supporting text -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="title"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textSize="25dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="194dp"
+                            android:contentDescription="content_description_media"
+                            app:srcCompat="@drawable/settings" />
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:text="Settings"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textColor="#5886F8"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
             </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/settings"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="2"
-            android:layout_rowWeight="1"
-            android:layout_column="0"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            android:backgroundTint="@color/lightGreen"
-            app:cardCornerRadius="24dp"
-            app:strokeColor="@color/darkGreen">
+        </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+    </ScrollView>
 
-                <!-- Media -->
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="194dp"
-                    android:contentDescription="content_description_media"
-                    app:srcCompat="@drawable/ic_favourite" />
 
-                <!-- Title, secondary and supporting text -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="title"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textSize="25dp" />
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/storage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="2"
-            android:layout_rowWeight="1"
-            android:layout_column="1"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            android:backgroundTint="@color/lightGreen"
-            app:cardCornerRadius="24dp"
-            app:strokeColor="@color/darkGreen">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
 
-                <!-- Media -->
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="194dp"
-                    android:contentDescription="content_description_media"
-                    app:srcCompat="@drawable/ic_favourite" />
 
-                <!-- Title, secondary and supporting text -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="title"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textSize="25dp" />
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
+    <!--    <ScrollView-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:orientation="vertical">-->
 
-    </GridLayout>
+    <!--        <GridLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_margin="25dp"-->
+    <!--            android:columnCount="2"-->
+    <!--            android:rowCount="3">-->
 
+    <!--            <com.google.android.material.card.MaterialCardView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_row="0"-->
+    <!--                android:layout_rowWeight="1"-->
+    <!--                android:layout_column="0"-->
+    <!--                android:layout_columnWeight="1"-->
+    <!--                android:layout_gravity="fill"-->
+    <!--                android:layout_margin="8dp"-->
+    <!--                android:backgroundTint="@color/lightGreen"-->
+    <!--                app:cardCornerRadius="24dp"-->
+    <!--                app:cardElevation="8dp"-->
+    <!--                app:strokeColor="@color/darkGreen">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center_vertical|center_horizontal"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    &lt;!&ndash; Media &ndash;&gt;-->
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="194dp"-->
+    <!--                        app:srcCompat="@drawable/diary" />-->
+
+    <!--                    &lt;!&ndash; Title, secondary and supporting text &ndash;&gt;-->
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginBottom="8dp"-->
+    <!--                        android:text="Diary"-->
+    <!--                        android:textAlignment="center"-->
+    <!--                        android:textColor="#5886F8"-->
+    <!--                        android:textSize="25dp"-->
+    <!--                        android:textStyle="bold" />-->
+    <!--                </LinearLayout>-->
+    <!--            </com.google.android.material.card.MaterialCardView>-->
+
+    <!--            <com.google.android.material.card.MaterialCardView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_row="0"-->
+    <!--                android:layout_rowWeight="1"-->
+    <!--                android:layout_column="1"-->
+    <!--                android:layout_columnWeight="1"-->
+    <!--                android:layout_gravity="fill"-->
+    <!--                android:layout_margin="8dp"-->
+    <!--                android:backgroundTint="@color/lightGreen"-->
+    <!--                app:cardCornerRadius="24dp"-->
+    <!--                app:cardElevation="8dp"-->
+    <!--                app:strokeColor="@color/darkGreen">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center_vertical|center_horizontal"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    &lt;!&ndash; Media &ndash;&gt;-->
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="194dp"-->
+    <!--                        android:contentDescription="content_description_media"-->
+    <!--                        app:srcCompat="@drawable/notes" />-->
+
+    <!--                    &lt;!&ndash; Title, secondary and supporting text &ndash;&gt;-->
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Notes"-->
+    <!--                        android:textAlignment="center"-->
+    <!--                        android:textColor="#5886F8"-->
+    <!--                        android:textSize="25dp"-->
+    <!--                        android:textStyle="bold" />-->
+    <!--                </LinearLayout>-->
+    <!--            </com.google.android.material.card.MaterialCardView>-->
+
+    <!--            <com.google.android.material.card.MaterialCardView-->
+    <!--                android:id="@+id/toDo"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_row="1"-->
+    <!--                android:layout_rowWeight="1"-->
+    <!--                android:layout_column="0"-->
+    <!--                android:layout_columnWeight="1"-->
+    <!--                android:layout_gravity="fill"-->
+    <!--                android:layout_margin="8dp"-->
+    <!--                android:backgroundTint="@color/lightGreen"-->
+    <!--                app:cardCornerRadius="24dp"-->
+    <!--                app:cardElevation="8dp"-->
+    <!--                app:strokeColor="@color/darkGreen">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    &lt;!&ndash; Media &ndash;&gt;-->
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="194dp"-->
+    <!--                        android:contentDescription="content_description_media"-->
+    <!--                        app:srcCompat="@drawable/todo" />-->
+
+    <!--                    &lt;!&ndash; Title, secondary and supporting text &ndash;&gt;-->
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_marginBottom="8dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="ToDo"-->
+    <!--                        android:textAppearance="?attr/textAppearanceHeadline6"-->
+    <!--                        android:textColor="#5886F8"-->
+    <!--                        android:textSize="25dp"-->
+    <!--                        android:textStyle="bold" />-->
+    <!--                </LinearLayout>-->
+    <!--            </com.google.android.material.card.MaterialCardView>-->
+
+    <!--            <com.google.android.material.card.MaterialCardView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_row="1"-->
+    <!--                android:layout_rowWeight="1"-->
+    <!--                android:layout_column="1"-->
+    <!--                android:layout_columnWeight="1"-->
+    <!--                android:layout_gravity="fill"-->
+    <!--                android:layout_margin="8dp"-->
+    <!--                android:backgroundTint="@color/lightGreen"-->
+    <!--                app:cardCornerRadius="24dp"-->
+    <!--                app:cardElevation="8dp"-->
+    <!--                app:strokeColor="@color/darkGreen">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    &lt;!&ndash; Media &ndash;&gt;-->
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="194dp"-->
+    <!--                        android:contentDescription="content_description_media"-->
+    <!--                        app:srcCompat="@drawable/schedule" />-->
+
+    <!--                    &lt;!&ndash; Title, secondary and supporting text &ndash;&gt;-->
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_marginBottom="8dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Schedule"-->
+    <!--                        android:textAppearance="?attr/textAppearanceHeadline6"-->
+    <!--                        android:textColor="#5886F8"-->
+    <!--                        android:textSize="25dp"-->
+    <!--                        android:textStyle="bold" />-->
+    <!--                </LinearLayout>-->
+    <!--            </com.google.android.material.card.MaterialCardView>-->
+
+    <!--            <com.google.android.material.card.MaterialCardView-->
+    <!--                android:id="@+id/storage"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_row="2"-->
+    <!--                android:layout_rowWeight="1"-->
+    <!--                android:layout_column="0"-->
+    <!--                android:layout_columnWeight="1"-->
+    <!--                android:layout_gravity="fill"-->
+    <!--                android:layout_margin="8dp"-->
+    <!--                android:backgroundTint="@color/lightGreen"-->
+    <!--                app:cardCornerRadius="24dp"-->
+    <!--                app:strokeColor="@color/darkGreen">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    &lt;!&ndash; Media &ndash;&gt;-->
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="194dp"-->
+    <!--                        android:contentDescription="content_description_media"-->
+    <!--                        app:srcCompat="@drawable/storage" />-->
+
+    <!--                    &lt;!&ndash; Title, secondary and supporting text &ndash;&gt;-->
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_marginBottom="8dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Storage"-->
+    <!--                        android:textAppearance="?attr/textAppearanceHeadline6"-->
+    <!--                        android:textColor="#5886F8"-->
+    <!--                        android:textSize="25dp"-->
+    <!--                        android:textStyle="bold" />-->
+    <!--                </LinearLayout>-->
+    <!--            </com.google.android.material.card.MaterialCardView>-->
+
+    <!--            <com.google.android.material.card.MaterialCardView-->
+    <!--                android:id="@+id/settings"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_row="2"-->
+    <!--                android:layout_rowWeight="1"-->
+    <!--                android:layout_column="1"-->
+    <!--                android:layout_columnWeight="1"-->
+    <!--                android:layout_gravity="fill"-->
+    <!--                android:layout_margin="8dp"-->
+    <!--                android:backgroundTint="@color/lightGreen"-->
+    <!--                app:cardCornerRadius="24dp"-->
+    <!--                app:strokeColor="@color/darkGreen">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    &lt;!&ndash; Media &ndash;&gt;-->
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="194dp"-->
+    <!--                        android:contentDescription="content_description_media"-->
+    <!--                        app:srcCompat="@drawable/settings" />-->
+
+    <!--                    &lt;!&ndash; Title, secondary and supporting text &ndash;&gt;-->
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_marginBottom="8dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Settings"-->
+    <!--                        android:textAppearance="?attr/textAppearanceHeadline6"-->
+    <!--                        android:textColor="#5886F8"-->
+    <!--                        android:textSize="25dp"-->
+    <!--                        android:textStyle="bold" />-->
+    <!--                </LinearLayout>-->
+    <!--            </com.google.android.material.card.MaterialCardView>-->
+    <!--        </GridLayout>-->
+    <!--    </ScrollView>-->
 </FrameLayout>

@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Projects/SoloFly/app/src/main/res/drawable/bottom_nav_bg.xml" value="0.2135" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/drawable/custom_siginin_button.xml" value="0.157" />
+        <entry key="..\:/Projects/SoloFly/app/src/main/res/drawable/ic_baseline_perm_media_24.xml" value="0.2445" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/drawable/ic_baseline_settings_test.xml" value="0.237" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/drawable/ic_favourite.xml" value="0.237" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.237" />
@@ -25,11 +26,14 @@
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_sign_in_email.xml" value="0.25625" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_storage.xml" value="0.21077383497221033" />
+        <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_to_do.xml" value="0.21077383497221033" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_try.xml" value="0.264" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/fontsample.xml" value="0.25625" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/fragment_dashboard.xml" value="0.264" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/fragment_home.xml" value="0.21077383497221033" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/fragment_up_commings.xml" value="0.19923044035912782" />
+        <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/new_task.xml" value="0.21077383497221033" />
+        <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/task_layout.xml" value="0.21077383497221033" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/menu/bottom_menu.xml" value="0.25677083333333334" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/menu/bottom_navigation.xml" value="0.25677083333333334" />
       </map>

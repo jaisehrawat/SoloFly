@@ -10,7 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SoloFly">
-        >
+        <activity
+            android:name=".Notes"
+            android:exported="false" />
+        <activity
+            android:name=".ToDo"
+            android:exported="false" />
         <activity
             android:name=".NotificationPage"
             android:exported="false" />

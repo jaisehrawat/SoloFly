@@ -122,12 +122,9 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
                     Data d = snapshot.getValue(Data.class);
                     name = d.getName();
                     profileUrl = d.getProfileUrl();
-                    System.out.println(name);
-                    System.out.println(profileUrl);
                     name_dashboard.setText(name);
                     Picasso.get().load(profileUrl).into(profile_icon_dashboard);
                 }
-
             }
 
             @Override

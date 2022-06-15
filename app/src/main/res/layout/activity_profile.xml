@@ -182,6 +182,7 @@
                 android:layout_margin="@dimen/_20ssp"
                 android:backgroundTint="@color/darkGrey"
                 android:text="Log Out"
+                android:textColor="@color/darkGreen"
                 android:textAllCaps="false" />
         </LinearLayout>
 

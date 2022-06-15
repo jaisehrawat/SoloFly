@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 public class dashboard extends Fragment {
 
-    CardView storage, settings;
+    CardView toDo, storage, settings;
 
     public dashboard() {
         // Required empty public constructor
@@ -28,14 +28,23 @@ public class dashboard extends Fragment {
 
         settings = v.findViewById(R.id.settings);
         storage = v.findViewById(R.id.storage);
+        toDo = v.findViewById(R.id.toDo);
+
+        toDo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), ToDo.class);
+                startActivity(i);
+            }
+        });
+
         settings.setOnClickListener(new View.OnClickListener() {
-                                        @Override
-                                        public void onClick(View view) {
-                                            Intent i = new Intent(getActivity(), settings.class);
-                                            startActivity(i);
-                                        }
-                                    }
-        );
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), settings.class);
+                startActivity(i);
+            }
+        });
 
         storage.setOnClickListener(new View.OnClickListener() {
             @Override

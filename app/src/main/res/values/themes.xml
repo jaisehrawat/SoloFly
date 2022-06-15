@@ -15,8 +15,13 @@
 
         <!-- Customize your theme here. -->
 <!--        <item name="android:background">@color/darkWhite</item>-->
-        <item name="android:fontFamily">@font/montserrat</item>
+<!--        <item name="android:fontFamily">@font/montserrat</item>-->
 
+<!--        Material alert dialog box button color -->
+        <item name="materialAlertDialogTheme">@style/materialAlertDialogTheme</item>
+
+        <!--        BottomSheet adjust-->
+        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogStyle</item>
 
     </style>
 
@@ -36,6 +41,26 @@
         <!-- Customize your theme here. -->
     </style>
 
+####################################################################################################
 
+    <style name="materialAlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/darkGreen</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/darkGreen</item>
+    </style>
+
+    ################################################################################################
+
+    <style name="BottomSheetDialogStyle" parent="Theme.Material3.DayNight.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
 
 </resources>

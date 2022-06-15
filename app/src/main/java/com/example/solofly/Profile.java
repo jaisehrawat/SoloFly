@@ -71,7 +71,6 @@ public class Profile extends AppCompatActivity {
                         SharedPreferences.Editor myEdit = preferences.edit();
                         myEdit.putBoolean("isLoggedIn", false);
                         myEdit.apply();
-
                     }
                 });
                 builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
