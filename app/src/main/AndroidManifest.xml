@@ -11,6 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SoloFly">
         <activity
+            android:name=".NewReminder"
+            android:exported="false" />
+        <activity
+            android:name=".Reminder"
+            android:exported="false" />
+        <activity
+            android:name=".NewNote"
+            android:exported="false" />
+        <activity
             android:name=".Notes"
             android:exported="false" />
         <activity

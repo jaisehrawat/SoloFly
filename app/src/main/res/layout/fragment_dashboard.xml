@@ -29,7 +29,7 @@
                 android:weightSum="2">
 
                 <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="fill"
                     android:layout_margin="8dp"
@@ -66,7 +66,8 @@
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
+                    android:id="@+id/notes"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="fill"
                     android:layout_margin="8dp"
@@ -150,6 +151,7 @@
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/reminder"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="fill"
@@ -179,7 +181,7 @@
                             android:layout_gravity="center"
                             android:layout_marginBottom="8dp"
                             android:gravity="center"
-                            android:text="Schedule"
+                            android:text="Reminder"
                             android:textAppearance="?attr/textAppearanceHeadline6"
                             android:textColor="#5886F8"
                             android:textSize="25dp"
@@ -277,10 +279,6 @@
         </LinearLayout>
 
     </ScrollView>
-
-
-
-
 
 
     <!--    <ScrollView-->

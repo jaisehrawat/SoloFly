@@ -14,16 +14,20 @@
         <item name="android:windowLightStatusBar">true</item>
 
         <!-- Customize your theme here. -->
-<!--        <item name="android:background">@color/darkWhite</item>-->
-<!--        <item name="android:fontFamily">@font/montserrat</item>-->
+        <!--        <item name="android:background">@color/darkWhite</item>-->
+        <!--        <item name="android:fontFamily">@font/montserrat</item>-->
 
-<!--        Material alert dialog box button color -->
+        <!--        Material alert dialog box button color -->
         <item name="materialAlertDialogTheme">@style/materialAlertDialogTheme</item>
 
         <!--        BottomSheet adjust-->
         <item name="bottomSheetDialogTheme">@style/BottomSheetDialogStyle</item>
 
+        <!--        DatePicker-->
+        <item name="materialCalendarTheme">@style/DatePicker</item>
+
     </style>
+
 
     #################################################################################################
     <!-- Base application theme. -->
@@ -41,7 +45,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-####################################################################################################
+    ####################################################################################################
 
     <style name="materialAlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
         <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
@@ -63,4 +67,11 @@
         <item name="android:windowSoftInputMode">adjustResize</item>
     </style>
 
+    ################################################################################################
+
+    <style name="DatePicker" parent="@style/ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/green</item>
+    </style>
+
+    ################################################################################################
 </resources>

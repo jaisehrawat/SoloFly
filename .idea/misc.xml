@@ -9,6 +9,8 @@
         <entry key="..\:/Projects/SoloFly/app/src/main/res/drawable/ic_baseline_settings_test.xml" value="0.237" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/drawable/ic_favourite.xml" value="0.237" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.237" />
+        <entry key="..\:/Projects/SoloFly/app/src/main/res/drawable/ic_repeat.xml" value="0.1815" />
+        <entry key="..\:/Projects/SoloFly/app/src/main/res/drawable/ic_timer.xml" value="0.1815" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/drawable/otp_box.xml" value="0.2135" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/drawable/round_bottom_back.xml" value="0.1815" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/drawable/send_again_code_btn.xml" value="0.2135" />
@@ -18,9 +20,13 @@
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_chip.xml" value="0.25226449275362317" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_form.xml" value="0.264" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_new_note.xml" value="0.21077383497221033" />
+        <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_new_reminder.xml" value="0.4" />
+        <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_notes.xml" value="0.264" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_notification_page.xml" value="0.21077383497221033" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_otp.xml" value="0.4" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_profile.xml" value="0.4" />
+        <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_reminder.xml" value="0.4" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_settings.xml" value="0.19923044035912782" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_sign_in.xml" value="0.4" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_sign_in_email.xml" value="0.25625" />
@@ -28,11 +34,14 @@
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_storage.xml" value="0.21077383497221033" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_to_do.xml" value="0.21077383497221033" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/activity_try.xml" value="0.264" />
+        <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/dropdown_textview.xml" value="0.2099187687045746" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/fontsample.xml" value="0.25625" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/fragment_dashboard.xml" value="0.264" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/fragment_home.xml" value="0.21077383497221033" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/fragment_up_commings.xml" value="0.19923044035912782" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/new_task.xml" value="0.21077383497221033" />
+        <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/note_layout.xml" value="0.21077383497221033" />
+        <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/reminder_item_layout.xml" value="0.4" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/layout/task_layout.xml" value="0.21077383497221033" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/menu/bottom_menu.xml" value="0.25677083333333334" />
         <entry key="..\:/Projects/SoloFly/app/src/main/res/menu/bottom_navigation.xml" value="0.25677083333333334" />
