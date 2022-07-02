@@ -90,7 +90,7 @@ public class ToDo extends AppCompatActivity implements OnDialogCloseListner {
     }
 
     private void showData() {
-        query = firestore.collection(phone);
+        query = firestore.collection(phone).document("todo").collection("todo");
 
         listenerRegistration = query.addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override

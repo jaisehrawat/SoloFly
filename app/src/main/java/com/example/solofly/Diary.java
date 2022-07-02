@@ -12,8 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.solofly.Adapter.ReminderAdapter;
-import com.example.solofly.Model.ReminderModel;
+import com.example.solofly.Adapter.DiaryAdapter;
+import com.example.solofly.Model.DiaryModel;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
@@ -29,23 +29,24 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Reminder extends AppCompatActivity {
+public class Diary extends AppCompatActivity {
 
     //  appbar
     ImageView profile_icon, back_button;
     TextView activity_name;
     String profileUrl, phone;
 
-    FloatingActionButton newReminderBtn;
-    RecyclerView reminderRecyclerView;
-    ArrayList<ReminderModel> reminderModelArrayList = new ArrayList<>();
-    ReminderAdapter reminderAdapter;
+    FloatingActionButton newDiaryNote;
+    RecyclerView diaryRecyclerview;
+    DiaryAdapter diaryAdapter;
+    ArrayList<DiaryModel> diaryModelArrayList;
     FirebaseFirestore firestore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reminder);
+        setContentView(R.layout.activity_diary);
+
         //    appBar
         back_button = findViewById(R.id.back_button);
         activity_name = findViewById(R.id.activity_name);
@@ -53,38 +54,43 @@ public class Reminder extends AppCompatActivity {
         SharedPreferences preferences = getSharedPreferences("logInData", MODE_PRIVATE);
         phone = preferences.getString("phone", "");
 
-        reminderRecyclerView = findViewById(R.id.reminder_recyclerview);
-        newReminderBtn = findViewById(R.id.new_reminder_btn);
+        newDiaryNote = findViewById(R.id.new_diary_note_btn);
+        diaryRecyclerview = findViewById(R.id.diary_recyclerview);
+        diaryRecyclerview.setHasFixedSize(true);
+        diaryRecyclerview.setLayoutManager(new LinearLayoutManager(this));
+        diaryModelArrayList = new ArrayList<>();
+        diaryAdapter = new DiaryAdapter(diaryModelArrayList, this);
 
-        newReminderBtn.setOnClickListener(new View.OnClickListener() {
+        diaryRecyclerview.setAdapter(diaryAdapter);
+
+        firestore = FirebaseFirestore.getInstance();
+
+        newDiaryNote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Reminder.this, NewReminder.class));
+                startActivity(new Intent(Diary.this, NewDiaryNote.class));
             }
         });
 
-        reminderRecyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
-
-        firestore = FirebaseFirestore.getInstance();
-        reminderAdapter = new ReminderAdapter(this, reminderModelArrayList);
         showData();
-        reminderRecyclerView.setAdapter(reminderAdapter);
+
     }
 
     private void showData() {
-        firestore.collection(phone).document("reminder").collection("reminder").get()
+        firestore.collection(phone).document("diary").collection("diary").get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                         List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
                         for (DocumentSnapshot d : list) {
-                            ReminderModel obj = d.toObject(ReminderModel.class);
-                            reminderModelArrayList.add(obj);
+                            DiaryModel obj = d.toObject(DiaryModel.class);
+                            diaryModelArrayList.add(obj);
                         }
-                        reminderAdapter.notifyDataSetChanged();
+                        diaryAdapter.notifyDataSetChanged();
                     }
                 });
     }
+
 
     @Override
     protected void onStart() {
@@ -101,12 +107,12 @@ public class Reminder extends AppCompatActivity {
         back_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Reminder.super.onBackPressed();
+                Diary.super.onBackPressed();
             }
         });
 
 //      Activity name set
-        activity_name.setText("Reminder");
+        activity_name.setText("Diary");
 
 //      Profile icon set
         reference.addValueEventListener(new ValueEventListener() {

@@ -38,7 +38,7 @@ public class ReminderAdapter extends RecyclerView.Adapter<ReminderAdapter.ViewHo
         holder.reminderShortNote.setText(reminderModelArrayList.get(position).reminderShortNote);
         holder.reminderDate.setText(reminderModelArrayList.get(position).reminderDate);
         holder.reminderTime.setText(reminderModelArrayList.get(position).reminderTime);
-        holder.remindBefore.setText(reminderModelArrayList.get(position).remindBefore);
+        holder.reminderBefore.setText(reminderModelArrayList.get(position).reminderBefore);
         holder.reminderRepeat.setText(reminderModelArrayList.get(position).reminderRepeat);
     }
 
@@ -48,7 +48,7 @@ public class ReminderAdapter extends RecyclerView.Adapter<ReminderAdapter.ViewHo
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView reminderTitle, reminderShortNote, remindBefore, reminderRepeat, reminderDate, reminderTime;
+        TextView reminderTitle, reminderShortNote, reminderBefore, reminderRepeat, reminderDate, reminderTime;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -56,7 +56,7 @@ public class ReminderAdapter extends RecyclerView.Adapter<ReminderAdapter.ViewHo
             reminderShortNote = itemView.findViewById(R.id.reminder_layout_short_note);
             reminderDate = itemView.findViewById(R.id.reminder_layout_date);
             reminderTime = itemView.findViewById(R.id.reminder_layout_time);
-            remindBefore = itemView.findViewById(R.id.reminder_layout_remind_before);
+            reminderBefore = itemView.findViewById(R.id.reminder_layout_remind_before);
             reminderRepeat = itemView.findViewById(R.id.reminder_layout_repeat);
         }
     }

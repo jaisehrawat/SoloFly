@@ -4,25 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/darkWhite"
-    tools:context=".Reminder">
+    tools:context=".Diary">
 
     <include layout="@layout/activity_appbar" />
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/diary_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/_4ssp"
-        android:layout_below="@+id/appbar">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/reminder_recyclerview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
+        android:padding="@dimen/_5ssp"
+        android:layout_below="@+id/appbar" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/new_reminder_btn"
+        android:id="@+id/new_diary_note_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"

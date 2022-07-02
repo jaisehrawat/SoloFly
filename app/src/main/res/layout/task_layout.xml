@@ -20,9 +20,9 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:paddingStart="8dp"
-            tools:text="Go to the market and bring vegetables immediately today."
             android:textColor="@color/black"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            tools:text="Go to the market and bring vegetables immediately today." />
 
     </RelativeLayout>
 

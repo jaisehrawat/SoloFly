@@ -46,7 +46,7 @@ public class ToDoAdapter extends RecyclerView.Adapter<ToDoAdapter.MyViewHolder> 
 
     public void deleteTask(int position) {
         ToDoModel toDoModel = todoList.get(position);
-        firestore.collection(phone).document(toDoModel.TaskId).delete();
+        firestore.collection(phone).document("todo").collection("todo").document(toDoModel.TaskId).delete();
         todoList.remove(position);
         notifyItemRemoved(position);
     }
@@ -81,9 +81,9 @@ public class ToDoAdapter extends RecyclerView.Adapter<ToDoAdapter.MyViewHolder> 
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    firestore.collection(phone).document(toDoModel.TaskId).update("status", 1);
+                    firestore.collection(phone).document("todo").collection("todo").document(toDoModel.TaskId).update("status", 1);
                 } else {
-                    firestore.collection(phone).document(toDoModel.TaskId).update("status", 0);
+                    firestore.collection(phone).document("todo").collection("todo").document(toDoModel.TaskId).update("status", 0);
                 }
             }
         });

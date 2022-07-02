@@ -1,17 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:background="@color/darkWhite"
     tools:context=".Storage">
 
-    <TextView
+    <include layout="@layout/activity_appbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/storage_folder_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:padding="@dimen/_5ssp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/storage_file_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/storage_folder_recyclerview"
+        android:padding="@dimen/_5ssp" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Storage"
-        android:textSize="@dimen/_75ssp"
-        />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_20ssp"
+        app:fab_addButtonColorNormal="@color/green"
+        app:fab_addButtonColorPressed="@color/darkGreen"
+        app:fab_addButtonPlusIconColor="@color/white"
+        app:fab_labelStyle="@drawable/fab_label_background">
 
-</LinearLayout>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/new_storage_folder_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/lightGreen"
+            app:fab_colorPressed="@color/darkGreen"
+            app:fab_icon="@drawable/ic_folder_add"
+            app:fab_title="New Folder" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/new_storage_file_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/lightGreen"
+            app:fab_colorPressed="@color/darkGreen"
+            app:fab_icon="@drawable/ic_file"
+            app:fab_title="New File" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/upcomings"
-        android:title="UpComings"
+        android:title="Projects"
         android:icon="@drawable/ic_sort_down"
         app:cnb_textColor="@color/darkGreen"
         app:cnb_iconColor="@color/darkGreen"

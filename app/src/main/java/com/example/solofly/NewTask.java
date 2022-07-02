@@ -111,7 +111,7 @@ public class NewTask  extends BottomSheetDialogFragment {
                 String task = mTaskEdit.getText().toString();
 
                 if (finalIsUpdate){
-                    firestore.collection(phone).document(id).update("task" , task );
+                    firestore.collection(phone).document("todo").collection("todo").document(id).update("task" , task );
                     Toast.makeText(context, "Task Updated", Toast.LENGTH_SHORT).show();
 
                 }
@@ -125,7 +125,7 @@ public class NewTask  extends BottomSheetDialogFragment {
                         taskMap.put("task", task);
                         taskMap.put("status", 0);
 
-                        firestore.collection(phone).add(taskMap).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
+                        firestore.collection(phone).document("todo").collection("todo").add(taskMap).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
                             @Override
                             public void onComplete(@NonNull Task<DocumentReference> task) {
                                 if (task.isSuccessful()) {

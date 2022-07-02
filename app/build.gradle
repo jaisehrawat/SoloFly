@@ -69,4 +69,6 @@ dependencies {
 //    RecyclerViewSwipeDecorator
     implementation 'com.github.xabaras:RecyclerViewSwipeDecorator:1.4'
 
+//    Floating Action Button Menu
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
 }
